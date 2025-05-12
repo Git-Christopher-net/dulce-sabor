@@ -18,3 +18,94 @@ header, footer {
     padding: 1em;
     margin-bottom: 1em;
 }
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 1rem;
+  }
+  
+  .producto {
+    background-color: #fff0f5;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .producto h3 {
+    color: #cc6699;
+    margin-top: 10px;
+  }
+  
+  .producto p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .productos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .productos {
+      grid-template-columns: 1fr;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    font-weight: bold;
+    color: #cc6699;
+  }
+  
+  input, select, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #cc6699;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #ff66b2;
+  }
+  
+  /* Responsive para pantallas pequeñas */
+  @media (max-width: 768px) {
+    form {
+      width: 90%;
+    }
+  }

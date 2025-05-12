@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Dulce Sabor</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>Dulce Sabor</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contáctanos</h2>
+    <form action="#" method="post" class="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Escribe tu email" />
+
+      <label for="tipo-pastel">Tipo de pastel:</label>
+      <select id="tipo-pastel" name="tipo-pastel" required>
+        <option value="fresa">Fresa</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="vainilla">Vainilla</option>
+        <option value="arcoiris">Arcoíris</option>
+        <option value="frutal">Frutal</option>
+      </select>
+
+      <label for="comentarios">Comentarios:</label>
+      <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí"></textarea>
+
+      <label for="aceptar-terminos">
+        <input type="checkbox" id="aceptar-terminos" name="aceptar-terminos" required />
+        Acepto los términos y condiciones
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dulce Sabor - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
