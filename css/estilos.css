@@ -18,6 +18,7 @@ header, footer {
     padding: 1em;
     margin-bottom: 1em;
 }
+/* estilos.css - Estilos para los cuadros de los pasteles */
 .productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -32,7 +33,7 @@ header, footer {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+  /* estilos.css - esto ajusto las imagenes el cuardo */
   .producto img {
     width: 100%;
     height: auto;
@@ -61,6 +62,8 @@ header, footer {
       grid-template-columns: 1fr;
     }
   }
+
+/* Para nuestra perte de contacto creamos un estilo de cuadros para cada seccion del formulario */
   form {
     display: flex;
     flex-direction: column;
@@ -109,3 +112,78 @@ header, footer {
       width: 90%;
     }
   }
+/* Regla 1: Estilos para los encabezados */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #cc6699;
+    text-align: center;
+  }
+  
+  /* Regla 2: Estilos para los enlaces */
+  a {
+    color: #ff66b2;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Regla 3: Diseño del pie de página */
+  footer {
+    background-color: #f7e1f2;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Regla 4: Estilo del header (cabecera) */
+  header {
+    background-color: #f7e1f2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Regla 5: Diseño de los botones en el formulario */
+  button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #cc6699;
+  }
+  
+  /* Responsive para pantallas pequeñas */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .productos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    form {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .productos {
+      grid-template-columns: 1fr;
+    }
+    
+    h1, h2, h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
